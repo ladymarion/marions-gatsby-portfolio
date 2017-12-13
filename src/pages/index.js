@@ -1,3 +1,6 @@
+// Import your components here:
+
+import Button from 'components/button'
 import React from 'react'
 import Link from 'gatsby-link'
 
@@ -10,6 +13,8 @@ export default class Index extends React.Component {
 				<p>Marion's website!</p>
 				<p>Image: <br /> <img src='/logo.png' /></p>
 
+				{/* Then use your components as regular HTML tags */}
+				<Button>Test component!</Button>
 
 				<style jsx>{`
 					.container{
