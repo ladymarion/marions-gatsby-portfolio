@@ -10,7 +10,7 @@ export default class Index extends React.Component {
 			<section className='container'>
 
 
-				<p>Marion's website!</p>
+				<p>Marion&apos;s website!</p>
 				<p>Image: <br /> <img src='/logo.png' /></p>
 
 				{/* Then use your components as regular HTML tags */}
