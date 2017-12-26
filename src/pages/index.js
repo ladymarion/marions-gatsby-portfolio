@@ -9,22 +9,60 @@ export default class Index extends React.Component {
 		return (
 			<section className='container'>
 
+				<div className="intro">
+					<h1>Hi!</h1>
+				</div>
 
-				<p>Marion&apos;s website!</p>
-				<p>Image: <br /> <img src='/logo.png' /></p>
+				<div className="intro start">
+					<h1>Let me introduce you to Marion.</h1>
+					<img src="/me.jpg" alt="Photo of Marion Rose" />
+					<p>(This is Marion)</p>
+				</div>
 
-				{/* Then use your components as regular HTML tags */}
-				<Button>Test component!</Button>
+				<div className="intro">
+					<h1>Marion is learning<br />how to build websites.</h1>
+					<img src="/me-learning.jpg" alt="Photo of Marion Rose" />
+					<p>(This is not Marion, but she doesn&apos;t have a photo of her thinking thoughfully.)</p>
+				</div>
+
+				<div className="intro last-intro">
+					<h1>Before Marion decided to learn about websites, she dabbled in the world of design.</h1>
+					<img src="/me-design.jpg" alt="Photo of Marion Rose" />
+				</div>
+
 
 				<style jsx>{`
 					.container{
 						max-width: 1200px;
-						padding: 30px;
 						margin: auto;
+						text-align: center;
 					}
+
+					.intro {
+						height: 100vh;
+						position: relative;
+					}
+
+					.intro,.start {
+						margin-top: 40vh;
+					}
+
+					h1 {
+						padding: 0 30px;
+						font-family: 'Vollkorn', serif;
+						font-size: 1.25em;
+					}
+
+					p {
+						padding: 0 30px;
+						font-family: 'PT Sans', sans-serif;
+					}
+
 					img{
-						width: 300px;
+						width: 75%;
+						max-width: 350px;
 					}
+
 				`}</style>
 
 

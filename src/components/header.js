@@ -6,33 +6,34 @@ export default class extends React.Component {
 		return (
 			<header>
 
-				<div><Link to='/'>Home</Link></div>
-				<div><Link to='/another-page'>Resume</Link></div>
-				<div><Link to='/another-page'>Portfolio</Link></div>
-				<div><Link to='/another-page'>Contact</Link></div>
+				<div className="navLink"><Link to='/'>Home</Link></div>
+				<div className="navLink"><Link to='/another-page'>Resume</Link></div>
+				<div className="navLink"><Link to='/another-page'>Portfolio</Link></div>
+				<div className="navLink"><Link to='/another-page'>Contact</Link></div>
 
 				<style jsx>{`
-					header {
-						background-color: #000;
-						width: 100%;
-					}
+
 
 					div {
 						display: inline-block;
-						padding: 10px 10px;
-						font-size: .75em;
-						border-left: 1px solid #444;
-						width: 25%;
-
+						font-family: 'PT Sans', sans-serif;
+						font-size: 1em;
 					}
 
-					div:first-child {
-						border-left: none;
+					.navLink {
+						padding: 0;
+						margin: 40px 20px 5px 20px;
+					  background-image: linear-gradient(black, black);
+					  background-size: 0 1px, auto;
+					  background-repeat: no-repeat;
+					  background-position: center bottom;
+					  transition: all .2s ease-out;
 					}
 
-					div:hover {
-						background-color: #222;
+					.navLink:hover {
+					  background-size: 100% 1px, auto;
 					}
+
 
 				`}</style>
 
@@ -40,7 +41,7 @@ export default class extends React.Component {
 					header{
 						text-align: center;
 						a{
-							color: #fff;
+							color: black;
 							text-decoration: none;
 						}
 
