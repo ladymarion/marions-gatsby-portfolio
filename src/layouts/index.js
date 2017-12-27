@@ -12,30 +12,53 @@ export default class Template extends React.Component {
 				{this.props.children()}
 				<Footer />
 				<style jsx global>{`
-					html{
+
+					html {
 						height: 100%;
 						box-sizing: border-box;
 					}
-					*, *:before, *:after{
+
+					*, *:before, *:after {
 						box-sizing: inherit;
 					}
-					body{
+
+					body {
 						position: relative;
 						min-height: 100%;
 						margin: 0;
 						font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 						text-rendering: optimizeLegibility;
 					}
-					html, body{
+
+					html, body {
 						-webkit-tap-highlight-color: rgba(0,0,0,0);
 					}
-					img{
+
+					img {
 						max-width: 100%;
 					}
-					::selection{
+
+					::selection {
 						background-color: #333;
 						color: #fff;
 					}
+
+					h1 {
+						padding: 0 30px;
+						font-family: 'Vollkorn', serif;
+						font-size: 1.25em;
+					}
+
+					h3 {
+						font-family: 'PT Sans', sans-serif;
+						font-size: 1em;
+					}
+
+					p {
+						font-family: 'PT Sans', sans-serif;
+
+					}
+
 				`}</style>
 			</div>
 		)

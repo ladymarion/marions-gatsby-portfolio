@@ -5,14 +5,15 @@ export default class extends React.Component {
 	render(){
 		return (
 			<header>
+				<div className="topNav">
+					<div className="navLink"><Link to='/'>Home</Link></div>
+					<div className="navLink"><Link to='/resume'>Resume</Link></div>
+					<div className="navLink"><Link to='/another-page'>Portfolio</Link></div>
+					<div className="navLink"><Link to='/another-page'>Contact</Link></div>
+				</div>
 
-				<div className="navLink"><Link to='/'>Home</Link></div>
-				<div className="navLink"><Link to='/another-page'>Resume</Link></div>
-				<div className="navLink"><Link to='/another-page'>Portfolio</Link></div>
-				<div className="navLink"><Link to='/another-page'>Contact</Link></div>
 
 				<style jsx>{`
-
 
 					div {
 						display: inline-block;
@@ -20,10 +21,20 @@ export default class extends React.Component {
 						font-size: 1em;
 					}
 
+					.topNav {
+						position: fixed;
+						top: 0;
+						left: 0;
+						right: 0;
+						background-color: #000;
+						z-index: 2;
+
+					}
+
 					.navLink {
 						padding: 0;
-						margin: 40px 20px 5px 20px;
-					  background-image: linear-gradient(black, black);
+						margin: 40px 20px 10px 20px;
+					  background-image: linear-gradient(#fff, #fff);
 					  background-size: 0 1px, auto;
 					  background-repeat: no-repeat;
 					  background-position: center bottom;
@@ -34,17 +45,15 @@ export default class extends React.Component {
 					  background-size: 100% 1px, auto;
 					}
 
-
 				`}</style>
 
 				<style jsx global>{`
 					header{
 						text-align: center;
 						a{
-							color: black;
+							color: #fff;
 							text-decoration: none;
 						}
-
 					}
 				`}</style>
 

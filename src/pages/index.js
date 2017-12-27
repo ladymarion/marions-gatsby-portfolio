@@ -14,7 +14,7 @@ export default class Index extends React.Component {
 				</div>
 
 				<div className="intro start">
-					<h1>Let me introduce you to Marion.</h1>
+					<h1>Please allow me to<br />introduce you to&nbsp;Marion.</h1>
 					<img src="/me.jpg" alt="Photo of Marion Rose" />
 					<p>(This is Marion)</p>
 				</div>
@@ -22,15 +22,15 @@ export default class Index extends React.Component {
 				<div className="intro">
 					<h1>Marion is learning<br />how to build websites.</h1>
 					<img src="/me-learning.jpg" alt="Photo of Marion Rose" />
-					<p>(This is not Marion, but she doesn&apos;t have a photo of her thinking thoughfully.)</p>
+					<p>(This is not Marion, but she didn&apos;t have a photo of her thinking thoughfully at her&nbsp;computer.)</p>
 				</div>
 
 				<div className="intro last-intro">
-					<h1>Before Marion decided to learn about websites, she dabbled in the world of design.</h1>
+					<h1>Before Marion decided<br />to learn about websites, she<br />dabbled in the world of design.</h1>
 					<img src="/me-design.jpg" alt="Photo of Marion Rose" />
 				</div>
 
-
+]
 				<style jsx>{`
 					.container{
 						max-width: 1200px;
@@ -44,18 +44,12 @@ export default class Index extends React.Component {
 					}
 
 					.intro,.start {
-						margin-top: 40vh;
+						margin-top: 50vh;
 					}
 
-					h1 {
-						padding: 0 30px;
-						font-family: 'Vollkorn', serif;
-						font-size: 1.25em;
-					}
 
 					p {
 						padding: 0 30px;
-						font-family: 'PT Sans', sans-serif;
 					}
 
 					img{
@@ -64,6 +58,8 @@ export default class Index extends React.Component {
 					}
 
 				`}</style>
+
+
 
 
 			</section>
