@@ -3,6 +3,9 @@
 import Button from 'components/button'
 import React from 'react'
 import Link from 'gatsby-link'
+import ResumeContent from 'components/resume-content'
+
+
 
 export default class Index extends React.Component {
 	render() {
@@ -30,7 +33,8 @@ export default class Index extends React.Component {
 					<img src="/me-design.jpg" alt="Photo of Marion Rose" />
 				</div>
 
-]
+				<ResumeContent />
+
 				<style jsx>{`
 					.container{
 						max-width: 1200px;
