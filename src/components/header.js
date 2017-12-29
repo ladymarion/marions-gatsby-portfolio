@@ -8,7 +8,7 @@ export default class extends React.Component {
 				<div className="topNav">
 					<div className="navLink"><Link to='/'>Home</Link></div>
 					<div className="navLink"><Link to='/resume'>Resume</Link></div>
-					<div className="navLink"><Link to='/another-page'>Portfolio</Link></div>
+					<div className="navLink"><Link to='/portfolio'>Portfolio</Link></div>
 					<div className="navLink"><Link to='/another-page'>Contact</Link></div>
 				</div>
 

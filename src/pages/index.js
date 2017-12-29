@@ -4,6 +4,8 @@ import Button from 'components/button'
 import React from 'react'
 import Link from 'gatsby-link'
 import ResumeContent from 'components/resume-content'
+import Portfolio from 'components/portfolio'
+
 
 
 
@@ -25,7 +27,7 @@ export default class Index extends React.Component {
 				<div className="intro">
 					<h1>Marion is learning<br />how to build websites.</h1>
 					<img src="/me-learning.jpg" alt="Photo of Marion Rose" />
-					<p>(This is not Marion, but she didn&apos;t have a photo of her thinking thoughfully at her&nbsp;computer.)</p>
+					<p>(This is not Marion, but she didn&apos;t have a photo of her thinking thoughtfully at her&nbsp;computer.)</p>
 				</div>
 
 				<div className="intro last-intro">
@@ -34,6 +36,7 @@ export default class Index extends React.Component {
 				</div>
 
 				<ResumeContent />
+				<div className="indexSection"><Portfolio /></div>
 
 				<style jsx>{`
 					.container{
@@ -59,6 +62,10 @@ export default class Index extends React.Component {
 					img{
 						width: 75%;
 						max-width: 350px;
+					}
+
+					.indexSection {
+						margin-top: 250px;
 					}
 
 				`}</style>
