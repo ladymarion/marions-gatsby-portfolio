@@ -4,19 +4,34 @@ export default class extends React.Component {
 	render(){
 		return (
 			<button>
-				{this.props.children}
+				<div className="navLink">{this.props.children}</div>
 				<style jsx>{`
 					button{
 						border: 0;
 						outline: 0;
 						background-color: #000;
 						color: #fff;
-						text-transform: uppercase;
-						padding: 10px 20px;
-						font-size: 1.1em;
+						font-family: 'PT Sans', sans-serif;
+						font-size: 1em;
+						padding: 15px 35px;
 						display: block;
-						margin: 30px 0;
+						margin: 45px auto;
+						text-align: center;
 					}
+
+					.navLink {
+						background-image: linear-gradient(#fff, #fff);
+						background-size: 0 1px, auto;
+						background-repeat: no-repeat;
+						background-position: center bottom;
+						transition: all .2s ease-out;
+						z-index:4;
+					}
+
+					.navLink:hover {
+						background-size: 100% 1px, auto;
+					}
+
 				`}</style>
 			</button>
 		)

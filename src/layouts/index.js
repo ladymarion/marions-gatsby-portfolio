@@ -49,6 +49,7 @@ export default class Template extends React.Component {
 						font-size: 1.25em;
 					}
 
+
 					h3 {
 						font-family: 'PT Sans', sans-serif;
 						font-size: 1em;
@@ -56,7 +57,7 @@ export default class Template extends React.Component {
 
 					p {
 						font-family: 'PT Sans', sans-serif;
-
+						font-size: .9em;
 					}
 
 				`}</style>

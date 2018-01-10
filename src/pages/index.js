@@ -5,6 +5,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import ResumeContent from 'components/resume-content'
 import Portfolio from 'components/portfolio'
+import Contact from 'components/contact-content'
+
 
 
 
@@ -38,6 +40,12 @@ export default class Index extends React.Component {
 				<ResumeContent />
 				<div className="indexSection"><Portfolio /></div>
 
+				<div className="outro">
+					<h1>Marion would just love<br/> to hear from you!</h1>
+					<Link to='contact'><Button>Contact Marion</Button></Link>
+				</div>
+
+
 				<style jsx>{`
 					.container{
 						max-width: 1200px;
@@ -66,6 +74,12 @@ export default class Index extends React.Component {
 
 					.indexSection {
 						margin-top: 250px;
+					}
+
+					.outro {
+						position: relative;
+						height: 100vh;
+						margin-top: 50vh;
 					}
 
 				`}</style>
