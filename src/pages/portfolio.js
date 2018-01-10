@@ -1,26 +1,15 @@
 import Button from 'components/button'
 import React from 'react'
 import Link from 'gatsby-link'
+import Portfolio from 'components/portfolio'
+
 
 export default class Index extends React.Component {
 	render() {
 		return (
       <section className='container'>
 
-        <h1>Here is some of Marion&apos;s work:</h1>
-
-        <img src="square-woodplay.jpg" alt="Photo of Marion Rose"/>
-        <img src="square-tribe.jpg" alt="Photo of Marion Rose"/>
-        <img src="square-stiga.jpg" alt="Photo of Marion Rose"/>
-        <img src="square-vivasol.jpg" alt="Photo of Marion Rose"/>
-        <img src="square-counterweights.jpg" alt="Photo of Marion Rose"/>
-        <img src="square-bridges.jpg" alt="Photo of Marion Rose"/>
-        <img src="square-sunshade.jpg" alt="Photo of Marion Rose" className="outlined"/>
-        <img src="square-toughnut.jpg" alt="Photo of Marion Rose"/>
-        <img src="square-walther.jpg" alt="Photo of Marion Rose"/>
-        <img src="square-smartergames.jpg" alt="Photo of Marion Rose"/>
-        <img src="square-courthouse.jpg" alt="Photo of Marion Rose"/>
-
+			<Portfolio />
 
         <style jsx>{`
 

@@ -7,18 +7,22 @@ export default class extends React.Component {
       <section className='container'>
 
         <h1>Here is some of Marion&apos;s work:</h1>
+				<div className="grid">
+	        <img src="square-woodplay.jpg" alt="Photo of Marion Rose"/>
+	        <img src="square-tribe.jpg" alt="Photo of Marion Rose"/>
+	        <img src="square-stiga.jpg" alt="Photo of Marion Rose" className="outlined"/>
+	        <img src="square-vivasol.jpg" alt="Photo of Marion Rose"/>
+	        <img src="square-counterweights.jpg" alt="Photo of Marion Rose"/>
+	        <img src="square-bridges.jpg" alt="Photo of Marion Rose"/>
+	        <img src="square-sunshade.jpg" alt="Photo of Marion Rose" className="outlined"/>
+	        <img src="square-toughnut.jpg" alt="Photo of Marion Rose"/>
+	        <img src="square-walther.jpg" alt="Photo of Marion Rose"/>
+	        <img src="square-smartergames.jpg" alt="Photo of Marion Rose"/>
+	        <img src="square-courthouse.jpg" alt="Photo of Marion Rose"/>
+					<img src="square-woodplay.jpg" alt="Photo of Marion Rose"/>
+				</div>
 
-        <img src="square-woodplay.jpg" alt="Photo of Marion Rose"/>
-        <img src="square-tribe.jpg" alt="Photo of Marion Rose"/>
-        <img src="square-stiga.jpg" alt="Photo of Marion Rose" className="outlined"/>
-        <img src="square-vivasol.jpg" alt="Photo of Marion Rose"/>
-        <img src="square-counterweights.jpg" alt="Photo of Marion Rose"/>
-        <img src="square-bridges.jpg" alt="Photo of Marion Rose"/>
-        <img src="square-sunshade.jpg" alt="Photo of Marion Rose" className="outlined"/>
-        <img src="square-toughnut.jpg" alt="Photo of Marion Rose"/>
-        <img src="square-walther.jpg" alt="Photo of Marion Rose"/>
-        <img src="square-smartergames.jpg" alt="Photo of Marion Rose"/>
-        <img src="square-courthouse.jpg" alt="Photo of Marion Rose"/>
+
 
 
         <style jsx>{`
@@ -34,11 +38,41 @@ export default class extends React.Component {
             border: 1px solid #ededed;
           }
 
+					.grid {
+						max-width: 80%;
+						margin: 0 auto;
+					}
+
           img{
-            width: 75%;
             margin: 10px;
-            max-width: 350px;
+            max-width: 300px;
           }
+
+					@media (min-width:600px) {
+
+						img {
+							margin: 13px;
+							max-width: 275px;
+						}
+
+						.grid {
+							margin: 0 auto;
+							max-width: 80%;
+						}
+
+					}
+
+
+					@media (min-width:900px) {
+						img {
+							max-width: 300px;
+						}
+
+						.grid {
+							max-width: 85%;
+						}
+
+					}
 
         `}</style>
 
