@@ -27,6 +27,10 @@ export default class Index extends React.Component {
 </div>
 			</form>
 
+			<div class="button">
+<button type="submit">Send your message</button>
+</div>
+
 
 
 
