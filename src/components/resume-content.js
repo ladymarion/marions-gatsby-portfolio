@@ -84,6 +84,10 @@ export default class extends React.Component {
 						margin: 10px;
 					}
 
+					.col-wide:last-of-type {
+						padding-bottom: 100px;
+					}
+
 
 				`}</style>
 

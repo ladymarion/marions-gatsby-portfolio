@@ -31,7 +31,6 @@ export default class extends React.Component {
             max-width: 1200px;
             margin: auto;
             text-align: center;
-            padding-top: 100px;
           }
 
           .outlined {
@@ -39,7 +38,7 @@ export default class extends React.Component {
           }
 
 					.grid {
-						max-width: 80%;
+						max-width: 95%;
 						margin: 0 auto;
 					}
 
@@ -48,7 +47,7 @@ export default class extends React.Component {
             max-width: 300px;
           }
 
-					@media (min-width:600px) {
+					@media (min-width:400px) {
 
 						img {
 							margin: 13px;
@@ -57,7 +56,6 @@ export default class extends React.Component {
 
 						.grid {
 							margin: 0 auto;
-							max-width: 80%;
 						}
 
 					}
