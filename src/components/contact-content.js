@@ -7,18 +7,7 @@ export default class Index extends React.Component {
 		return (
       <section className='contact'>
 
-        <h1>Marion would just love<br/> to hear from you!</h1>
 
-        <h2>Marion Rose</h2>
-        <p>Graphic Designer & Budding Web Developer</p>
-
-
-				<form name="contact" data-netlify="true" method="post" action="thank-you">
-			      <input type="text" name="name" />
-			      <input type="email" name="email" />
-			      <textarea name="message"></textarea>
-						<input type="submit" value="submit" />
-			    </form>
 
 
         <style jsx>{`
