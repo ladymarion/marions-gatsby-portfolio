@@ -22,6 +22,9 @@ export default class Index extends React.Component {
 			        <label for="msg">Message:</label>
 			        <textarea id="msg" name="user_message"></textarea>
 			    </div>
+					<div class="button">
+  <button type="submit">Send your message</button>
+</div>
 			</form>
 
 
