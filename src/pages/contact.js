@@ -7,50 +7,87 @@ export default class Index extends React.Component {
 		return (
       <section className='contact'>
 
-			<form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-			<input type="hidden" name="form-name" value="contact" />
+			<div className='col-wide'>
+				<form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+					<input type="hidden" name="form-name" value="contact" />
 
-			    <div>
-			        <label for="name">Name:</label>
-			        <input type="text" id="name" name="user_name" />
-			    </div>
-			    <div>
-			        <label for="mail">E-mail:</label>
-			        <input type="email" id="mail" name="user_mail" />
-			    </div>
-			    <div>
-			        <label for="msg">Message:</label>
-			        <textarea id="msg" name="user_message"></textarea>
-			    </div>
+					<h1>Marion would just looooooove to hear from YOU!</h1>
+
+					<div>
+					    <label for="name">Name:</label>
+					    <input type="text" id="name" name="user_name" />
+					</div>
+
+					<div>
+					    <label for="mail">Email:</label>
+					    <input type="email" id="mail" name="user_mail" />
+					</div>
+
+					<div>
+							<label for="msg">Message:</label>
+					    <textarea id="msg" name="user_message"></textarea>
+					</div>
+
 					<div class="button">
-  <button type="submit">Send your message</button>
-</div>
-			</form>
+						<button type="submit">Send your message</button>
+					</div>
 
-			<div class="button">
-<button type="submit">Send your message</button>
-</div>
+				</form>
+			</div>
+
+			<div className='col-narrow'>
+				<p><strong>Marion Rose</strong><br/>marionelizabethrose@gmail.com</p>
+			</div>
 
 
 
-
-        <style jsx>{`
+  		<style jsx>{`
           .contact {
-            height: 100vh;
-            margin-top: 50vh;
-						float: left;
+            margin-top: 22vh;
+						height: 100vh;
+						width: 100%;
           }
 
-          h2 {
-            font-family: 'PT Sans', sans-serif;
-            font-size: 1.10em;
-            margin-top: 50px;
-            margin-bottom: 0;
-          }
 
-          p {
-            margin: 0;
-          }
+					form {
+						margin: 0 auto;
+						width: 80%;
+						max-width: 500px;
+							div {
+							margin-top: 15px;
+							}
+					}
+
+					h1 {
+						margin-bottom: 50px;
+					}
+
+					label {
+						display: block;
+						font-family: 'Vollkorn', serif;
+						font-size: 1em;
+						padding-bottom: 5px;
+					}
+
+					input, textarea {
+						font-family: 'PT Sans', sans-serif;
+						font-size: .9em;
+						padding: 5px 8px;
+						width: 100%;
+						box-sizing: border-box;
+						border: 1px solid #999;
+					}
+
+					textarea {
+						min-height: 150px;
+					}
+
+
+					.col-narrow {
+						font-family: 'PT Sans', sans-serif;
+						text-align: center;
+						margin-top: 75px;
+					}
 
 
         `}</style>
