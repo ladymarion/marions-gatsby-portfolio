@@ -28,23 +28,17 @@ export default class Index extends React.Component {
 					    <textarea id="msg" name="user_message"></textarea>
 					</div>
 
-					<div class="button">
-						<button type="submit">Send your message</button>
-					</div>
+					<Button type="submit">Send your message</Button>
 
 				</form>
-			</div>
-
-			<div className='col-narrow'>
-				<p><strong>Marion Rose</strong><br/>marionelizabethrose@gmail.com</p>
 			</div>
 
 
 
   		<style jsx>{`
           .contact {
-            margin-top: 22vh;
-						height: 100vh;
+            margin-top: 120px;
+						margin-bottom: 50px;
 						width: 100%;
           }
 
@@ -58,8 +52,10 @@ export default class Index extends React.Component {
 							}
 					}
 
+
+
 					h1 {
-						margin-bottom: 50px;
+						margin-bottom: 40px;
 					}
 
 					label {
@@ -79,7 +75,8 @@ export default class Index extends React.Component {
 					}
 
 					textarea {
-						min-height: 150px;
+						min-height: 50px;
+						overflow: scroll;
 					}
 
 

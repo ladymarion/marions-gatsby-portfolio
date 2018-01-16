@@ -7,7 +7,7 @@ export default class extends React.Component {
 			<section className='container'>
 
 
-					<h1>Here is a brief summary of her dabblings:</h1>
+					<h1>Here is a brief summary of&nbsp;her&nbsp;dabblings:</h1>
 
 
 					<div className="job">
@@ -46,7 +46,7 @@ export default class extends React.Component {
 						</div>
 
 
-						<div className="col-wide">
+						<div className="col-wide last">
 							<p>The Bridge&apos;s originally hired Marion as a concierge. Upon discovery of her design skills they quickly transferred her responsibilites to the Marketing Department. By the time she left the Bridges she was responsible for both the Tennis and Rec Centre and Sports Centre accounts. Marion reported to the directors of both facilities with designs for seasonal event catalogs, flyers for print and web, sale advertisements and informational brochures. She maintained the website content for both facilities, created web banners, uploaded flyers, and managed Sports Centre email marketing blasts. She loved working for The Bridges, and continued to work for them independently for years after she moved away.</p>
 						</div>
 					</div>
@@ -84,7 +84,7 @@ export default class extends React.Component {
 						margin: 10px;
 					}
 
-					.col-wide:last-of-type {
+					.last {
 						padding-bottom: 100px;
 					}
 

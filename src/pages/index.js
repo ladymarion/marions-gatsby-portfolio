@@ -38,12 +38,13 @@ export default class Index extends React.Component {
 				</div>
 
 				<ResumeContent />
-				<div className="indexSection"><Portfolio /></div>
+				<div className="portfolio"><Portfolio /></div>
 
 				<div className="outro">
-					<h1>Marion would just love<br/> to hear from you!</h1>
+					<h1>Marion would just looooooove<br/> to hear from you!</h1>
 					<Link to='contact'><Button>Contact Marion</Button></Link>
 				</div>
+
 
 
 				<style jsx>{`
@@ -72,14 +73,14 @@ export default class Index extends React.Component {
 						max-width: 350px;
 					}
 
-					.indexSection {
+					.portfolio {
 						margin-top: 250px;
 					}
 
 					.outro {
 						position: relative;
-						height: 100vh;
-						margin-top: 50vh;
+						margin-top: 250px;
+						margin-bottom: 250px;
 					}
 
 				`}</style>

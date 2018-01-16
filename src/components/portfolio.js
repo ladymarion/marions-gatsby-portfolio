@@ -33,6 +33,10 @@ export default class extends React.Component {
             text-align: center;
           }
 
+					h1 {
+						margin-bottom: 35px;
+					}
+
           .outlined {
             border: 1px solid #ededed;
           }
