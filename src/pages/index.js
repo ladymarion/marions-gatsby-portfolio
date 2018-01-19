@@ -86,7 +86,7 @@ export default class Index extends React.Component {
 						margin-bottom: 250px;
 					}
 
-					@media (min-width:650px) {
+					@media (min-width:600px) {
 
 						.resume {
 							height: 100vh;
@@ -114,6 +114,11 @@ export default class Index extends React.Component {
 
 						p {
 							max-width: 400px;
+						}
+
+						.outro {
+							height: 50vh;
+							margin-bottom: 0;
 						}
 
 					}

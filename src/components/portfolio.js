@@ -96,15 +96,11 @@ export default class extends React.Component {
 
 						img {
 							max-width: 270px;
-							filter: gray;
-								-webkit-filter: grayscale(1);
-								-webkit-transition: all .2s ease-in-out;
+							-webkit-transition: all .2s ease-in-out;
 						}
 
 						img:hover {
-							filter: none;
-								-webkit-filter: grayscale(0);
-								-webkit-transform: scale(1.01);
+							-webkit-transform: scale(1.01);
 
 						}
 

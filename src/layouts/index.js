@@ -61,7 +61,7 @@ export default class Template extends React.Component {
 					}
 
 
-					@media (min-width:650px) {
+					@media (min-width:600px) {
 
 						h1 {
 							font-size: 2em;
@@ -74,7 +74,7 @@ export default class Template extends React.Component {
 
 						h1 {
 							font-size: 3em;
-							margin-bottom: 15px;
+							margin-bottom: 20px;
 						}
 
 						p {

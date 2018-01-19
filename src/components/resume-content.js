@@ -143,9 +143,35 @@ export default class extends React.Component {
 
 						@media (min-width:900px) {
 							.resume {
-								max-width: 800px;
+								max-width: 925px;
+							}
+
+							.job {
+								margin: 80px 0;
+							}
+
+							h1 {
+								font-size: 3em;
+								margin-bottom: 20px;
+							}
+
+							h3 {
+								font-size: 1.05em;
+							}
+
+							p {
+								font-size: 1.03em;
+							}
+
+							.col-narrow {
+								padding-right: 10px;
+							}
+
+							.col-wide {
+								padding-right: 15px;
 							}
 						}
+
 
 
 				`}</style>
