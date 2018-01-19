@@ -59,7 +59,7 @@ export default class Index extends React.Component {
 					}
 
 					.intro,.start {
-						margin-top: 50vh;
+						margin-top: 47vh;
 					}
 
 					div {
