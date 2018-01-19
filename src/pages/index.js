@@ -15,6 +15,8 @@ export default class Index extends React.Component {
 		return (
 			<section className='container'>
 
+				<div id='top'></div>
+
 				<div className="intro">
 					<h1>Hi!</h1>
 				</div>
@@ -47,10 +49,15 @@ export default class Index extends React.Component {
 
 
 				<style jsx>{`
+
 					.container{
 						max-width: 1200px;
 						margin: auto;
 						text-align: center;
+					}
+
+					#top {
+						display: none;
 					}
 
 					.intro {
@@ -130,6 +137,7 @@ export default class Index extends React.Component {
 
 
 			</section>
+
 		)
 	}
 }

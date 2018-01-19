@@ -6,7 +6,7 @@ export default class extends React.Component {
 		return (
 			<header>
 				<div className="topNav">
-					<div className="navLink"><Link to='/'>Home</Link></div>
+					<div className="navLink"><Link to='#top'>Home</Link></div>
 					<div className="navLink"><Link to='/resume'>Resume</Link></div>
 					<div className="navLink"><Link to='/portfolio'>Portfolio</Link></div>
 					<div className="navLink"><Link to='/contact'>Contact</Link></div>
