@@ -5,7 +5,6 @@ import React from 'react'
 import Link from 'gatsby-link'
 import ResumeContent from 'components/resume-content'
 import Portfolio from 'components/portfolio'
-import Contact from 'components/contact-content'
 
 
 
@@ -37,7 +36,7 @@ export default class Index extends React.Component {
 					<img src="/me-design.jpg" alt="Photo of Marion Rose" />
 				</div>
 
-				<ResumeContent />
+				<div className="resume"><ResumeContent /></div>
 				<div className="portfolio"><Portfolio /></div>
 
 				<div className="outro">
@@ -63,9 +62,13 @@ export default class Index extends React.Component {
 						margin-top: 50vh;
 					}
 
+					div {
+					}
 
 					p {
-						padding: 0 30px;
+						padding: 5px 30px;
+						max-width: 350px;
+						margin: auto;
 					}
 
 					img{
@@ -82,6 +85,39 @@ export default class Index extends React.Component {
 						margin-top: 250px;
 						margin-bottom: 250px;
 					}
+
+					@media (min-width:650px) {
+
+						.resume {
+							height: 100vh;
+						}
+
+						.portfolio {
+							margin: 700px auto;
+						}
+
+						.outro {
+							margin-bottom: 400px;
+						}
+
+						p {
+							padding-top: 10px;
+						}
+
+					}
+
+					@media (min-width:900px) {
+
+						img {
+							max-width: 525px;
+						}
+
+						p {
+							max-width: 400px;
+						}
+
+					}
+
 
 				`}</style>
 

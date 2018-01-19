@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 export default class extends React.Component {
 	render(){
 		return (
+
 			<footer>
 
 				<div className='col-narrow'>
@@ -27,6 +28,7 @@ export default class extends React.Component {
 					text-align: center;
 					padding-top: 20px;
 					margin-top: 50px;
+					clear: both;
 				}
 
 				img {

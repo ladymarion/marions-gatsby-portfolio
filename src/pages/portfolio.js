@@ -20,21 +20,7 @@ export default class Index extends React.Component {
             padding-top: 100px;
 					}
 
-          .outlined {
-            border: 1px solid #ededed;
-          }
-
-          img{
-            width: 75%;
-            padding: 10px;
-            max-width: 350px;
-
-          }
-
-          img:first-of-type {
-            margin-top: 20px;
-          }
-
+        
         `}</style>
 
 

@@ -49,7 +49,8 @@ export default class extends React.Component {
           img{
             margin: 10px;
             max-width: 300px;
-          }
+					}
+
 
 					@media (min-width:400px) {
 
@@ -65,6 +66,17 @@ export default class extends React.Component {
 					}
 
 
+					@media (min-width:600px) {
+
+							h1 {
+								font-size: 2em;
+								clear: both;
+							}
+
+					}
+
+
+
 					@media (min-width:900px) {
 						img {
 							max-width: 300px;
@@ -72,6 +84,28 @@ export default class extends React.Component {
 
 						.grid {
 							max-width: 85%;
+						}
+
+					}
+
+					@media (min-width: 1166px) {
+
+						.grid {
+							max-width: 100%;
+						}
+
+						img {
+							max-width: 270px;
+							filter: gray;
+								-webkit-filter: grayscale(1);
+								-webkit-transition: all .2s ease-in-out;
+						}
+
+						img:hover {
+							filter: none;
+								-webkit-filter: grayscale(0);
+								-webkit-transform: scale(1.01);
+
 						}
 
 					}

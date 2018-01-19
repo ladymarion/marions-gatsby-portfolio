@@ -2,6 +2,7 @@ import Button from 'components/button'
 import React from 'react'
 import Link from 'gatsby-link'
 
+
 export default class Index extends React.Component {
 	render() {
 		return (
@@ -11,7 +12,7 @@ export default class Index extends React.Component {
 				<form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
 					<input type="hidden" name="form-name" value="contact" />
 
-					<h1>Marion would just looooooove to hear from YOU!</h1>
+					<h1>Marion would just looooooove to hear from&nbsp;YOU!</h1>
 
 					<div>
 					    <label for="name">Name:</label>
@@ -36,12 +37,17 @@ export default class Index extends React.Component {
 
 
   		<style jsx>{`
-          .contact {
-            margin-top: 120px;
-						margin-bottom: 50px;
-						width: 100%;
-          }
 
+					body{
+						position: relative;
+						min-height: 100%;
+					}
+
+          .contact {
+            margin-top: 130px;
+						width: 100%;
+						margin-bottom: 80px;
+          }
 
 					form {
 						margin: 0 auto;
@@ -52,10 +58,10 @@ export default class Index extends React.Component {
 							}
 					}
 
-
-
 					h1 {
-						margin-bottom: 40px;
+						text-align: center;
+						max-width: 322px;
+						margin: 40px auto;
 					}
 
 					label {
@@ -84,6 +90,43 @@ export default class Index extends React.Component {
 						font-family: 'PT Sans', sans-serif;
 						text-align: center;
 						margin-top: 75px;
+					}
+
+
+					@media (min-width:600px) {
+
+						.contact {
+	            margin-top: 130px;
+							margin-bottom: 85px;
+						}
+
+						h1 {
+							max-width: 500px;
+						}
+
+						textarea {
+							min-height: 200px;
+						}
+
+					}
+
+
+					@media (min-width:900px) {
+
+						.contact {
+							margin-top: 200px;
+						}
+
+						form {
+							max-width: 700px;
+						}
+
+						h1 {
+							max-width: 700px;
+						}
+
+
+
 					}
 
 

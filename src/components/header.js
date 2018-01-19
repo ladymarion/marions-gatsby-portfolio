@@ -33,7 +33,7 @@ export default class extends React.Component {
 
 					.navLink {
 						padding: 0;
-						margin: 40px 20px 10px 20px;
+						margin: 40px 15px 10px 15px;
 					  background-image: linear-gradient(#fff, #fff);
 					  background-size: 0 1px, auto;
 					  background-repeat: no-repeat;
@@ -45,7 +45,26 @@ export default class extends React.Component {
 					  background-size: 100% 1px, auto;
 					}
 
+
+
+
+
+					@media (min-width:400px) {
+						.navLink {
+							padding: 0;
+							margin: 40px 20px 10px 20px;
+						}
+					}
+
+
+
+
 				`}</style>
+
+
+
+
+
 
 				<style jsx global>{`
 					header{
@@ -55,6 +74,9 @@ export default class extends React.Component {
 							text-decoration: none;
 						}
 					}
+
+
+
 				`}</style>
 
 			</header>

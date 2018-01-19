@@ -60,6 +60,29 @@ export default class Template extends React.Component {
 						font-size: .9em;
 					}
 
+
+					@media (min-width:650px) {
+
+						h1 {
+							font-size: 2em;
+							margin-bottom: 15px;
+						}
+
+					}
+
+					@media (min-width:900px) {
+
+						h1 {
+							font-size: 3em;
+							margin-bottom: 15px;
+						}
+
+						p {
+							font-size: 1em;
+						}
+
+					}
+
 				`}</style>
 			</div>
 		)
