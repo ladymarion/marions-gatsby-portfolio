@@ -115,9 +115,6 @@ export default class Index extends React.Component {
 
 					@media (min-width:900px) {
 
-						img {
-							max-width: 525px;
-						}
 
 						p {
 							max-width: 400px;

@@ -70,18 +70,7 @@ export default class Template extends React.Component {
 
 					}
 
-					@media (min-width:900px) {
-
-						h1 {
-							font-size: 3em;
-							margin-bottom: 20px;
-						}
-
-						p {
-							font-size: 1em;
-						}
-
-					}
+					
 
 				`}</style>
 			</div>
